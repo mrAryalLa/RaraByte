@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RaraByte LLC — Web design, software engineering and AI</title>
+  <meta name="description" content="RaraByte LLC designs websites, engineers software, supports Microsoft Azure and AWS cloud environments and builds practical AI systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a href="#top" class="logo" aria-label="RaraByte home">
+        <img class="logo__img logo__img--light" src="assets/logo-light.png" alt="RaraByte" width="886" height="167" />
+        <img class="logo__img logo__img--dark" src="assets/logo.png" alt="" aria-hidden="true" width="886" height="167" />
+      </a>
+      <nav aria-label="Main">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul class="nav__menu" id="menu">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#cloud">Cloud</a></li>
+          <li><a href="#process">How we work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="btn btn--small">Start a project</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <canvas class="hero__field" aria-hidden="true"></canvas>
+      <div class="wrap hero__content">
+        <h1 class="hero__title">
+          <span class="line">Software that</span>
+          <span class="line">feels rare.</span>
+        </h1>
+        <p class="hero__lede">
+          RaraByte designs websites, engineers dependable software, runs your Azure and AWS
+          cloud and puts AI to work inside real businesses. Small senior team, clear pricing, code you own.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--brand">Start a project</a>
+          <a href="#services" class="btn btn--ghost">See what we build</a>
+        </div>
+      </div>
+      <p class="hero__hint" aria-hidden="true">Move your cursor. Find the rare byte.</p>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="wrap">
+        <h2 class="section-title">What we build</h2>
+        <p class="section-lede">Pick a service to see what's included.</p>
+
+        <div class="svc" data-services>
+          <div class="svc__list" role="tablist" aria-label="Services">
+            <button role="tab" id="t-web" aria-controls="p-web" aria-selected="true">Web design &amp; development</button>
+            <button role="tab" id="t-sw" aria-controls="p-sw" aria-selected="false" tabindex="-1">Software engineering</button>
+            <button role="tab" id="t-ai" aria-controls="p-ai" aria-selected="false" tabindex="-1">AI &amp; automation</button>
+            <button role="tab" id="t-cloud" aria-controls="p-cloud" aria-selected="false" tabindex="-1">Azure &amp; AWS cloud</button>
+            <button role="tab" id="t-data" aria-controls="p-data" aria-selected="false" tabindex="-1">Data &amp; analytics</button>
+            <button role="tab" id="t-sec" aria-controls="p-sec" aria-selected="false" tabindex="-1">Security &amp; support</button>
+          </div>
+
+          <div class="svc__panels">
+            <article role="tabpanel" id="p-web" aria-labelledby="t-web">
+              <h3>Websites people actually finish reading.</h3>
+              <p>Fast, accessible sites and web apps designed around what your visitors came to do. We handle strategy, UX, visual design and the build.</p>
+              <ul>
+                <li>Brand-led UI and UX design</li>
+                <li>Marketing sites, e-commerce and web apps</li>
+                <li>Headless CMS so your team can edit content</li>
+                <li>Core Web Vitals, SEO and WCAG accessibility</li>
+              </ul>
+            </article>
+            <article role="tabpanel" id="p-sw" aria-labelledby="t-sw" hidden>
+              <h3>Custom software, built to be maintained.</h3>
+              <p>From internal tools to customer-facing platforms, we write clean, tested code and document it so your next developer isn't guessing.</p>
+              <ul>
+                <li>Web, mobile and desktop applications</li>
+                <li>APIs, integrations and legacy modernization</li>
+                <li>TypeScript, Python, Go, .NET and more</li>
+                <li>Automated testing and code review built in</li>
+              </ul>
+            </article>
+            <article role="tabpanel" id="p-ai" aria-labelledby="t-ai" hidden>
+              <h3>AI that saves hours, not headlines.</h3>
+              <p>We find the repetitive work in your business and build AI assistants, agents and workflows that handle it, with guardrails and measurable results.</p>
+              <ul>
+                <li>LLM-powered assistants and chat over your documents</li>
+                <li>AI agents that work across your tools</li>
+                <li>Document processing and workflow automation</li>
+                <li>Model evaluation, privacy and cost control</li>
+              </ul>
+            </article>
+            <article role="tabpanel" id="p-cloud" aria-labelledby="t-cloud" hidden>
+              <h3>Infrastructure you don't have to think about.</h3>
+              <p>We design, migrate and support Microsoft Azure and Amazon Web Services environments that deploy with one click, scale with demand and send you a smaller bill.</p>
+              <ul>
+                <li>Azure and AWS architecture, migration and managed support</li>
+                <li>CI/CD pipelines and infrastructure as code</li>
+                <li>Containers, Kubernetes and serverless</li>
+                <li>Monitoring, alerting and cost optimization</li>
+              </ul>
+              <a href="#cloud" class="svc__more">See Azure and AWS support details</a>
+            </article>
+            <article role="tabpanel" id="p-data" aria-labelledby="t-data" hidden>
+              <h3>Numbers you can make decisions with.</h3>
+              <p>We connect scattered data into one reliable source and build dashboards your team will open every morning.</p>
+              <ul>
+                <li>Data pipelines and warehousing</li>
+                <li>Dashboards and business intelligence</li>
+                <li>Forecasting and predictive models</li>
+                <li>Data quality and governance</li>
+              </ul>
+            </article>
+            <article role="tabpanel" id="p-sec" aria-labelledby="t-sec" hidden>
+              <h3>Secure from day one, supported after launch.</h3>
+              <p>Security reviews, hardening and ongoing care plans that keep your systems patched, backed up and fast.</p>
+              <ul>
+                <li>Security audits and penetration test fixes</li>
+                <li>Authentication, access control and encryption</li>
+                <li>Backups, uptime monitoring and updates</li>
+                <li>Monthly support retainers with fixed response times</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOUD SUPPORT -->
+    <section class="cloud" id="cloud">
+      <div class="wrap">
+        <div class="cloud__head">
+          <h2 class="section-title">Cloud support for Azure and AWS</h2>
+          <p class="section-lede">Whether you're moving to the cloud, already running there or stuck with a bill you don't understand, we set it up properly and keep it healthy.</p>
+        </div>
+
+        <div class="cloud__platforms">
+          <article class="platform platform--azure">
+            <h3>Microsoft Azure</h3>
+            <p>A natural fit if your team already lives in Microsoft 365, Windows Server or .NET.</p>
+            <ul class="platform__stack" aria-label="Azure services we work with">
+              <li>App Service</li><li>AKS</li><li>Azure Functions</li><li>Azure SQL</li>
+              <li>Entra ID</li><li>Azure DevOps</li><li>Azure OpenAI</li><li>Azure Monitor</li>
+            </ul>
+            <ul class="platform__list">
+              <li>Move on-premises servers and apps to Azure</li>
+              <li>Single sign-on and access control with Entra ID</li>
+              <li>Microsoft 365 and Teams integrations</li>
+              <li>Private, secure AI with Azure OpenAI</li>
+            </ul>
+          </article>
+
+          <article class="platform platform--aws">
+            <h3>Amazon Web Services</h3>
+            <p>The widest set of building blocks, ideal for web apps, SaaS products and data-heavy workloads.</p>
+            <ul class="platform__stack" aria-label="AWS services we work with">
+              <li>EC2</li><li>ECS &amp; EKS</li><li>Lambda</li><li>RDS</li>
+              <li>S3 &amp; CloudFront</li><li>IAM</li><li>Bedrock</li><li>CloudWatch</li>
+            </ul>
+            <ul class="platform__list">
+              <li>Serverless and container architectures that scale</li>
+              <li>Well-Architected reviews and remediation</li>
+              <li>Global hosting with CloudFront CDN</li>
+              <li>Generative AI apps with Amazon Bedrock</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="coverage">
+          <h3 class="coverage__title">Every support plan covers</h3>
+          <dl class="coverage__grid">
+            <div><dt>Migration</dt><dd>Planned cutovers with rollback, so your customers never notice the move.</dd></div>
+            <div><dt>Monitoring</dt><dd>Around-the-clock uptime, performance and error alerts routed to our team.</dd></div>
+            <div><dt>Cost control</dt><dd>Monthly right-sizing, reserved capacity and budget alerts so spend tracks real usage.</dd></div>
+            <div><dt>Security</dt><dd>Patching, backups, least-privilege access and compliance-ready configurations.</dd></div>
+          </dl>
+          <a href="#contact" class="btn btn--primary" data-need="Azure,AWS">Get a free cloud review</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process" id="process">
+      <div class="wrap">
+        <h2 class="section-title">How a project runs</h2>
+        <ol class="steps">
+          <li>
+            <h3>Discover</h3>
+            <p>A free call to understand your goals, users and constraints. You get a written scope and fixed quote within a week.</p>
+          </li>
+          <li>
+            <h3>Design</h3>
+            <p>Clickable prototypes you can test before a line of production code is written.</p>
+          </li>
+          <li>
+            <h3>Build</h3>
+            <p>Two-week sprints with a live preview link, so you see progress instead of hearing about it.</p>
+          </li>
+          <li>
+            <h3>Launch &amp; grow</h3>
+            <p>We ship, measure and keep improving. Full source code and documentation are yours.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="wrap about__grid">
+        <div>
+          <h2 class="section-title">Why RaraByte</h2>
+          <p class="about__text">
+            Most agencies hand your project to whoever is free. We keep teams small and senior,
+            so the people you meet on the first call are the people writing your code.
+            RaraByte LLC is a professional, scientific and technical services firm focused on
+            custom programming and computer systems design.
+          </p>
+        </div>
+        <dl class="facts">
+          <div><dt>Response time</dt><dd>Within one business day</dd></div>
+          <div><dt>Ownership</dt><dd>You own 100% of the code</dd></div>
+          <div><dt>Pricing</dt><dd>Fixed quotes or monthly retainers</dd></div>
+          <div><dt>Stack</dt><dd>Modern, open standards, no lock-in</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="wrap contact__grid">
+        <div>
+          <h2 class="section-title">Tell us what you're building</h2>
+          <p class="contact__lede">Share a few details and we'll reply with next steps within one business day.</p>
+          <p class="contact__direct">Prefer email? <a href="mailto:hello@rarabyte.com">hello@rarabyte.com</a></p>
+        </div>
+
+        <form class="form" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+            <p class="field__error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="email">Work email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+            <p class="field__error" aria-live="polite"></p>
+          </div>
+          <fieldset class="field">
+            <legend>What do you need?</legend>
+            <div class="chips">
+              <label><input type="checkbox" name="need" value="Website" /><span>Website</span></label>
+              <label><input type="checkbox" name="need" value="Software" /><span>Software</span></label>
+              <label><input type="checkbox" name="need" value="AI" /><span>AI</span></label>
+              <label><input type="checkbox" name="need" value="Azure" /><span>Azure</span></label>
+              <label><input type="checkbox" name="need" value="AWS" /><span>AWS</span></label>
+              <label><input type="checkbox" name="need" value="Data" /><span>Data</span></label>
+              <label><input type="checkbox" name="need" value="Support" /><span>Support</span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <p class="field__error" aria-live="polite"></p>
+          </div>
+          <button type="submit" class="btn btn--primary">Send message</button>
+          <p class="form__status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <a href="#top" class="logo logo--small" aria-label="RaraByte LLC, back to top">
+        <img class="logo__img" src="assets/logo-light.png" alt="RaraByte LLC" width="886" height="167" />
+      </a>
+      <p>Web design, software engineering and AI services.</p>
+      <p>&copy; <span data-year></span> RaraByte LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
